@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "ES6", // Современный JS для браузеров
+        "module": "ES6", // Модули для браузеров
+        "outDir": "public", // Куда компилировать
+        "rootDir": "src", // Где исходники
+        "strict": true, // Строгая проверка типов
+        "esModuleInterop": true, // Совместимость с импортами
+        "skipLibCheck": true, // Пропуск проверки типов в библиотеках
+        "lib": [
+            "DOM",
+            "ES6"
+        ] // Типы для браузера (fetch, document)
+    },
+    "include": [
+        "src/client.ts"
+    ], // Только client.ts
+    "exclude": [
+        "node_modules",
+        "src/server.ts"
+    ]
+}
