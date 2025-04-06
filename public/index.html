@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Регистрация пользователя</h1>
-    <form id="registration-form">
-        <input type="text" id="name" placeholder="Имя" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <button type="submit">Зарегистрироваться</button>
-    </form>
+    <div class="wrapper">
+        <h1>Регистрация пользователя</h1>
+        <form id="registration-form">
+            <input type="text" id="name" placeholder="Имя" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <button type="submit">Зарегистрироваться</button>
+        </form>
 
-    <h2>Зарегистрированные пользователи:</h2>
-    <ul id="user-list"></ul>
+        <h2>Зарегистрированные пользователи:</h2>
+        <ul id="user-list"></ul>
+    </div>
+
 
     <script src="client.js"></script>
 </body>
